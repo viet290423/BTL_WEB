@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--Iconcout cdn-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/home.css">
+    
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="" style="width: 50px;">
+                <h2>🇻‌🇱‌🇮‌🇫‌🇪</h2>
+             </div>
+            
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="search for creator">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary mini-button" for="create">Create</label>
+                <div class="profile-picture" id="my-profile-picture" >
+                    <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="profile" >
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container main-container">
+            <div class="main-left">
+
+                <!-- profile start -->
+                <a class="profile">
+                    <div class="profile-picture" id="my-profile-picture">
+                        <img src="./img/21011232.jpg" alt="profile">
+                    </div>
+                    <div class="profile-handle">
+                        <h4>Vinh Pham</h4>
+                        <p class="text-gry">
+                            @vinhphamduc
+                        </p>
+                    </div>
+                </a>
+                <!-- profile end -->
+
+
+                <!-- start aside -->
+                <aside>
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                    </a>
+                    <a class="menu-item" > 
+                        <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">                    
+                        <span><i class="uil uil-bell"><small class="notification-count" id="ntCounter1">9+</small></i></span><h3>Notifications</h3>
+                        <!-- notification box -->
+                        <div class="notification-box">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="img/anh1.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Vinh Pham</b> accepted your friend request
+                                    <small class="text-muted">2 day ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="img/anh2.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Vinh Pham</b> accepted your friend request
+                                    <small class="text-muted">2 day ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="img/anh3.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Vinh Pham</b> accepted your friend request
+                                    <small class="text-muted">2 day ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="img/anh4.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Vinh Pham</b> accepted your friend request
+                                    <small class="text-muted">2 day ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="img/anh5.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Vinh Pham</b> accepted your friend request
+                                    <small class="text-muted">2 day ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="img/anh6.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Vinh Pham</b> accepted your friend request
+                                    <small class="text-muted">2 day ago</small>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </a>
+                    <a class="menu-item" id="messages-notifications"> 
+                        <span><i class="uil uil-envelope-alt" >
+                        <small class="notification-count" id="ntCounter2">9</small></i></span><h3>Messages</h3>
+                    </a>
+                    <a class="menu-item"> 
+                        <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item"> 
+                        <span><i class="uil uil-chart-line"></i></span><h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item"> 
+                        <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
+                    </a>
+                    <a class="menu-item"> 
+                        <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
+
+                    </a>
+                    
+                    <label class="btn btn-primary btn-lg" for="add-post" id="create-lg">Create post</label>
+
+                </aside>
+                <!--   aside end -->
+
+            </div>
+            <!-- main left end -->
+
+             <!-- Middle -->
+             <div class="main-middle">
+                <div class="middle-container">
+                    <!-- start stories -->
+                    <div class="stories">
+                        <div class="stories-weapper swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="story swiper-slide"> 
+                                    <img src="" alt="">                                  
+                                    <div class="profile-picture" id="my-profile-picture">
+                                        <img src="./img/21011232.jpg" alt="profile">
+                                    </div>
+                                    <label for="add-story" class="add-story">
+                                        <i class="uil uil-plus-circle"></i>                             
+                                        <p>Add your <br> story</p>
+                                    </label>
+                                    <input type="file" accept="image/jpg, image/png, image/jpeg" id="add-story">
+                                </div>
+                                <div class="story swiper-slide">
+                                    
+                                    <img src="img/anh2.jpg" alt="">
+                                    <div class="profile-picture" >
+                                        <img src="./img/anh2.jpg" alt="profile">
+                                    </div>
+                                    <p>Vinh</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="img/anh3.jpg" alt="">
+                                    <div class="profile-picture" >
+                                        <img src="./img/anh4.jpg" alt="profile">
+                                    </div>
+                                    <p>pham</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="img/anh5.jpg" alt="">
+                                    <div class="profile-picture" >
+                                        <img src="./img/anh6.jpg" alt="profile">
+                                    </div>
+                                    <p>duc</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="img/anh7.jpg" alt="">
+                                    <div class="profile-picture" >
+                                        <img src="./img/anh8.png" alt="profile">
+                                    </div>
+                                    <p>viet</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="img/anh9.jpg" alt="">
+                                    <div class="profile-picture" >
+                                        <img src="./img/anh10.jpg" alt="profile">
+                                    </div>
+                                    <p>viet</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="img/anh10.jpg" alt="">
+                                    <div class="profile-picture" >
+                                        <img src="./img/anh11.jpg" alt="profile">
+                                    </div>
+                                    <p>viet</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="img/anh12.jpg" alt="">
+                                    <div class="profile-picture" >
+                                        <img src="./img/anh13.jpg" alt="profile">
+                                    </div>
+                                    <p>viet</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- start stories -->
+    
+                    <!-- post input -->
+                    <form class="add-post input-post">
+                        <div class="profile-picture" id="my-profile-picture">
+                            <img src="img/21011232.jpg" alt="">
+                        </div>
+                        <input type="text" name="" placeholder="What's on your mind?" id="add-post">
+                        <input type="submit" value="post" class="btn btn-primary">                       
+                    </form>
+                    <form class="add-post input-post">
+                        <div class="post-icons">
+                            <span><i class="uil uil-video" style="font-size: 48px; color: red;"></i>Live a video</span>
+                            <span><i class="uil uil-image-v" style="font-size: 48px; color: green;"></i>Ảnh/video</span>
+                            <span><i class="uil uil-smile" style="font-size: 48px; color: wheat;"></i>Cảm xúc/hành động</span>
+                        </div>
+                    </form>
+                   
+                     <!-- feed aria strat -->
+                     <div class="feeds">
+                        <div class="feed myfeed">
+                            <!-- feed top -->
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="img/anh10.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pham duc vinh</h3>
+                                        <small>HaNoi, <span>2 days ago</span></small>
+                                    </div>                                      
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-v"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="uil uil-edit"></i>edit</li>
+                                        <li><i class="uil uil-trash-alt"></i>delete</li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                <img src="img/anh11.jpg" alt="">
+                            </div>
+                            <!-- feed action aria -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-alt-dots"></i></span>
+                                    <span><i class="uil uil-share"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark"></i></span>
+                                </div>
+                            </div>
+    
+                            <!-- linked by -->
+                            <div class="like-by">
+                                <span><img src="img/anh2.jpg" alt=""></span>
+                                <span><img src="img/anh3.jpg" alt=""></span>
+                                <span><img src="img/anh4.jpg" alt=""></span>
+                                
+                                <p><b>Viet</b> and <b>100 comments other</b></p>
+                            </div>
+    
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, deserunt!</div>
+                                <p><b>Vu</b> lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <span class="harsh-tag">#lifestyle</span>
+                            </div>
+    
+                            <!-- comments -->
+                            <div class="comments text-muted">
+                                View all comments
+                            </div>
+                        </div>
+                        <div class="feed myfeed">
+                            <!-- feed top -->
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="img/anh10.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pham duc vinh</h3>
+                                        <small>HaNoi, <span>2 days ago</span></small>
+                                    </div>                                      
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-v"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="uil uil-edit"></i>edit</li>
+                                        <li><i class="uil uil-trash-alt"></i>delete</li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <p>Lần thứ 6 tham dự EURO liên tiếp</p>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                
+                                <img src="https://img.docbao.vn/images/uploads/2022/10/10/xe/ronaldo-2.jpg" alt="">
+                            </div>
+                            <!-- feed action aria -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-alt-dots"></i></span>
+                                    <span><i class="uil uil-share"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark"></i></span>
+                                </div>
+                            </div>
+    
+                            <!-- linked by -->
+                            <div class="like-by">
+                                <span><img src="img/anh2.jpg" alt=""></span>
+                                <span><img src="img/anh3.jpg" alt=""></span>
+                                <span><img src="img/anh4.jpg" alt=""></span>
+                                
+                                <p><b>Viet</b> and <b>100 comments other</b></p>
+                            </div>
+    
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium unde itaque tenetur cumque nisi a laborum sed aliquid ipsum distinctio!</div>
+                                <p><b>Vu</b> lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <span class="harsh-tag">#lifestyle</span>
+                            </div>
+    
+                            <!-- comments -->
+                            <div class="comments text-muted">
+                                View all comments
+                            </div>
+                        </div>
+                        <div class="feed myfeed">
+                            <!-- feed top -->
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="img/anh10.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pham duc vinh</h3>
+                                        <small>HaNoi, <span>2 days ago</span></small>
+                                    </div>                                      
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-v"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="uil uil-edit"></i>edit</li>
+                                        <li><i class="uil uil-trash-alt"></i>delete</li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                <img src="" alt="">
+                            </div>
+                            <!-- feed action aria -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-alt-dots"></i></span>
+                                    <span><i class="uil uil-share"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark"></i></span>
+                                </div>
+                            </div>
+    
+                            <!-- linked by -->
+                            <div class="like-by">
+                                <span><img src="img/anh2.jpg" alt=""></span>
+                                <span><img src="img/anh3.jpg" alt=""></span>
+                                <span><img src="img/anh4.jpg" alt=""></span>
+                                
+                                <p><b>Viet</b> and <b>100 comments other</b></p>
+                            </div>
+    
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium unde itaque tenetur cumque nisi a laborum sed aliquid ipsum distinctio!</div>
+                                <p><b>Vu</b> lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <span class="harsh-tag">#lifestyle</span>
+                            </div>
+    
+                            <!-- comments -->
+                            <div class="comments text-muted">
+                                View all comments
+                            </div>
+                        </div>
+                        <div class="feed myfeed">
+                            <!-- feed top -->
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="img/anh10.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pham duc vinh</h3>
+                                        <small>HaNoi, <span>2 days ago</span></small>
+                                    </div>                                      
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-v"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="uil uil-edit"></i>edit</li>
+                                        <li><i class="uil uil-trash-alt"></i>delete</li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                <img src="img/anh13.jpg" alt="">
+                            </div>
+                            <!-- feed action aria -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-alt-dots"></i></span>
+                                    <span><i class="uil uil-share"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark"></i></span>
+                                </div>
+                            </div>
+    
+                            <!-- linked by -->
+                            <div class="like-by">
+                                <span><img src="img/anh2.jpg" alt=""></span>
+                                <span><img src="img/anh3.jpg" alt=""></span>
+                                <span><img src="img/anh4.jpg" alt=""></span>
+                                
+                                <p><b>Viet</b> and <b>100 comments other</b></p>
+                            </div>
+    
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium unde itaque tenetur cumque nisi a laborum sed aliquid ipsum distinctio!</div>
+                                <p><b>Vu</b> lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <span class="harsh-tag">#lifestyle</span>
+                            </div>
+    
+                            <!-- comments -->
+                            <div class="comments text-muted">
+                                View all comments
+                            </div>
+                        </div>
+                        <div class="feed myfeed">
+                            <!-- feed top -->
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="img/anh10.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pham duc vinh</h3>
+                                        <small>HaNoi, <span>2 days ago</span></small>
+                                    </div>                                      
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-v"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="uil uil-edit"></i>edit</li>
+                                        <li><i class="uil uil-trash-alt"></i>delete</li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                <img src="img/anh8.png" alt="">
+                            </div>
+                            <!-- feed action aria -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-alt-dots"></i></span>
+                                    <span><i class="uil uil-share"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark"></i></span>
+                                </div>
+                            </div>
+    
+                            <!-- linked by -->
+                            <div class="like-by">
+                                <span><img src="img/anh2.jpg" alt=""></span>
+                                <span><img src="img/anh3.jpg" alt=""></span>
+                                <span><img src="img/anh4.jpg" alt=""></span>
+                                
+                                <p><b>Viet</b> and <b>100 comments other</b></p>
+                            </div>
+    
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium unde itaque tenetur cumque nisi a laborum sed aliquid ipsum distinctio!</div>
+                                <p><b>Vu</b> lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <span class="harsh-tag">#lifestyle</span>
+                            </div>
+    
+                            <!-- comments -->
+                            <div class="comments text-muted">
+                                View all comments
+                            </div>
+                        </div>
+                        <div class="feed myfeed">
+                            <!-- feed top -->
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="img/anh10.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pham duc vinh</h3>
+                                        <small>HaNoi, <span>2 days ago</span></small>
+                                    </div>                                      
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-v"></i>
+                                    <ul class="edit-menu">
+                                        <li><i class="uil uil-edit"></i>edit</li>
+                                        <li><i class="uil uil-trash-alt"></i>delete</li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <!-- feed img -->
+                            <div class="feed-img">
+                                <img src="img/anh14.jpg" alt="">
+                            </div>
+                            <!-- feed action aria -->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-alt-dots"></i></span>
+                                    <span><i class="uil uil-share"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark"></i></span>
+                                </div>
+                            </div>
+    
+                            <!-- linked by -->
+                            <div class="like-by">
+                                <span><img src="img/anh2.jpg" alt=""></span>
+                                <span><img src="img/anh3.jpg" alt=""></span>
+                                <span><img src="img/anh4.jpg" alt=""></span>
+                                
+                                <p><b>Viet</b> and <b>100 comments other</b></p>
+                            </div>
+    
+                            <!-- caption -->
+                            <div class="caption">
+                                <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium unde itaque tenetur cumque nisi a laborum sed aliquid ipsum distinctio!</div>
+                                <p><b>Vu</b> lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <span class="harsh-tag">#lifestyle</span>
+                            </div>
+    
+                            <!-- comments -->
+                            <div class="comments text-muted">
+                                View all comments
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!-- fedd aria end -->
+                </div>
+             </div>
+           
+             <!-- Right -->
+            <div class="right">
+               <div class="friend">
+                    <h4>Request</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./img/anh-chan-dung-1.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Pham Duc Vinh</h5>
+                                <p class="text-gry">
+                                    4 phút trước
+                                </p>
+                                <small class="text-gry alert">bạn đã chấp nhận</small>                                                     
+                            </div>                         
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary" id="Accept">
+                                Đồng ý
+                            </div>
+                            <div class="btn btn-danger" id="Delete">
+                                Hủy
+                            </div>
+                        </div> 
+                                                  
+                    </div> 
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./img/anh-chan-dung-1.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Pham Duc Vinh</h5>
+                                <p class="text-gry">
+                                    4 phút trước
+                                </p>
+                                <small class="text-gry alert">bạn đã chấp nhận</small>                                                     
+                            </div>                         
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary" id="Accept">
+                                Đồng ý
+                            </div>
+                            <div class="btn btn-danger" id="Delete">
+                                Hủy
+                            </div>
+                        </div> 
+                                                  
+                    </div> 
+                    
+                </div>
+               <div class="contact">
+                    <h4>Contact</h4>  
+                    <div class="contacts">
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/354048049_3326431224315375_7677279690226490869_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=TUiEK5dvu3cAX8k5Dlg&_nc_ht=scontent-hkt1-1.xx&oh=00_AfDGK6CAEv9BkX30LGHMk_25_38yLd8GQzD1Gaw4igfFew&oe=652F8B45" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Huê Phạm</p>
+                        </div>
+                        
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Đức Việt</p>
+                        </div>
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Ngọc tình</p>
+                        </div>
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="https://scontent.fhan5-11.fna.fbcdn.net/v/t1.6435-9/165688155_529071208492660_157535844444428858_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=be3454&_nc_ohc=xsRi7glmIKcAX8oWZjQ&_nc_ht=scontent.fhan5-11.fna&oh=00_AfCzfzW4HNg9OQ-EUyk14TpbxXgwjv0DP0S5ZmRawgnGqw&oe=6551FC0B" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Trần Đức Toản</p>
+                        </div>
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="https://my7up.vn/wp-content/uploads/anh-gai-dep-facebook-lam-anh-dai-dien-6.jpg" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Xinh chứ:))</p>
+                        </div>
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="https://my7up.vn/wp-content/uploads/anh-gai-dep-facebook-lam-anh-dai-dien-2.jpg" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Xinh chứ:))</p>
+                        </div>
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="https://img.docbao.vn/images/uploads/2022/10/10/xe/ronaldo-2.jpg" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Xinh chứ:))</p>
+                        </div>
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Xinh chứ:))</p>
+                        </div>
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Xinh chứ:))</p>
+                        </div>
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Xinh chứ:))</p>
+                        </div>
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Xinh chứ:))</p>
+                        </div>
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Xinh chứ:))</p>
+                        </div>
+                        <div class="online-list">
+                            <div class="profile-picture">
+                                <img src="" alt="">
+                                <span class="online-status"></span>
+                            </div>
+                            <p>Xinh chứ:))</p>
+                        </div>
+                        
+                    </div>                
+                       
+               </div>
+            </div>
+        </div>
+        
+    </main>
+    <div class="popup profile-popup">
+        <div>
+            <div class="popup-box profile-popup-box">
+                <h1>Vinh Pham</h1>
+                <p>@PhamDucVinh</p>
+                <div id="my-profile-picture">
+                    <img src="" alt="">
+    
+                </div>
+                <label for="profile-upload" class="btn btn-primary btn-lg">update profile</label>
+                <input type="file" accept="image/jpg, image/png, image/jpeg" id="profile-upload">
+                <button class="btn btn-primary btn-lg">Log Out</button>
+            </div>
+            <span class="close"><i class="uil uil-times"></i></span>
+        </div>
+    </div>
+    <!--start profile post popup  -->
+    <div class="popup add-post-popup">
+        <div>
+            <form class="popup-box add-post-popup">
+                <h1>Add new post</h1>
+                <div class="row post-title">
+                    <label >Title</label>
+                    <input type="text" id="add-post" placeholder="what's on your mind?">
+                </div>
+                <div class="row post-img">
+                    <img src="" alt="" id="postImg">
+                    <label for="feed-pic-upload" class="feed-upload-button"><span><i class="uil uil-plus"></i></span>Upload A Picture</label>
+                    <input type="file" accept="image/jpg, image/png, image/jpeg" id="feed-pic-upload">
+                    <input type="submit"  class="btn btn-primary btn-lg" value="Add post">
+                </div>
+            </form>
+            <span class="close"><i class="uil uil-times"></i></span>
+        </div>
+    </div>
+    <!-- end profile post popup -->
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- custom js link -->
+    <script src="./assets/js/home.js"></script>
+</body>
+</html>

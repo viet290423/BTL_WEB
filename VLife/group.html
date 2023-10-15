@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/profie.css">
+    <link rel="stylesheet" href="./assets/css/group.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container" x-data="{ rightSide: false, leftSide: false }">
+        <div class="left-side" :class="{'active' : leftSide}">
+            <div class="left-side-button" @click="leftSide = !leftSide">
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+            </div>
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="" width="50px">
+                <h2>🇻‌🇱‌🇮‌🇫‌🇪</h2>
+            </div>
+            <div class="side-wrapper">
+                <div class="side-title">MENU</div>
+                <div class="side-menu">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                    <path d="M9 22V12h6v10" />
+                    </svg>
+                    Home
+                </a>
+                <a href="trend.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                        <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                    Trending
+                   </a>
+                <a href="group.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    Group
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                    <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+                    </svg>
+                    Files
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                    <circle cx="8.5" cy="8.5" r="1.5" />
+                    <path d="M21 15l-5-5L5 21" />
+                    </svg>
+                    Galery
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <path d="M16 2v4M8 2v4M3 10h18" />
+                    </svg>
+                    Events
+                </a>
+                </div>
+            </div>
+            <div class="side-wrapper">
+                <div class="side-title">YOUR GROUPS</div>
+                <div class="side-menu">
+                <a href="#">
+                    <div class="user">
+                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/313209665_526415922829139_1931573599479211662_n.png?stp=c358.0.924.924a_cp0_dst-png_s75x225&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MvXllXDtK90AX8y6W7l&_nc_ht=scontent.fhan14-1.fna&oh=00_AfCTLvolXxwbOmlvpkyplvbJgN6hQIZcgxuaPKxm31AVYg&oe=652CA1E8" alt="" class="user-img">
+                    </div>
+                    Học lập trình web (F8 - Fullstack.edu.vn)
+                </a>
+                <a href="#">
+                    <div class="user">
+                        <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/380639464_122095758128054932_7039522945380314834_n.jpg?stp=c236.0.488.488a_cp0_dst-jpg_s75x225&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jxE4JEzX0lIAX_nbkHL&_nc_ht=scontent.fhan14-3.fna&oh=00_AfB2Aqkp32TAwiLlC7QcnGIYtwHzCOdeKHGTMO8vuerFNw&oe=652D9F8C" alt="" class="user-img">
+                    </div>
+                    Mặt tối của internet
+                </a>
+                <a href="#">
+                    <div class="user">
+                        <img src="https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/216487870_4596171327060007_2872420420054435187_n.jpg?stp=c448.0.1152.1152a_cp0_dst-jpg_s75x225&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=iFxMyYZsbrwAX9rrHW-&_nc_ht=scontent.fhan14-4.fna&oh=00_AfB4-4k0zI5Tvq0Od86QReI8BVMwkNg7He1GgdBFeo4-Ng&oe=652C8753" alt="" class="user-img">
+                    </div>
+                    Khoa CNTT-Đại học Phenikaa
+                </a>
+                <a href="#">
+                    <div class="user">
+                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/316432293_3023781761096654_5537866782693045451_n.png?stp=c358.0.924.924a_cp0_dst-png_s75x225&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yvnvPE9HwwkAX_xzN4E&_nc_ht=scontent.fhan14-1.fna&oh=00_AfC5d5cBJMtHqnFWIXZ0wH7zjm9M1jivFQ7xbDbuy8XhmQ&oe=652D8D6F" alt="" class="user-img">
+                    </div>
+                    Lập Trình C,C++,C#,Java, Python,PHP...
+                </a>
+                <a href="#">
+                    <div class="user">
+                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-1/285457225_102906169230185_4853121737905419299_n.jpg?stp=dst-jpg_p100x100&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YtT2k0fx9HMAX_JQno3&_nc_ht=scontent.fhan14-2.fna&oh=00_AfCg5RkwVnArkEPgzvCG9MWZkuCm8FNbR-BGASHTF0PPUg&oe=652D48A2" alt="" class="user-img">
+                    </div>
+                    Web developer
+                </a>
+                <a href="#">
+                    <div class="user">
+                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.6435-9/93426654_242086890531178_812726761522462720_n.jpg?stp=c94.0.313.313a_cp0_dst-jpg_s75x225&_nc_cat=105&ccb=1-7&_nc_sid=70495d&_nc_ohc=L5FEbZTIWNIAX85XEqN&_nc_ht=scontent.fhan14-1.fna&oh=00_AfCvT6Uf61kP5FC6zgJJN_B-l9byTusXz7Llo3qNhQI2TQ&oe=654F2319" alt="" class="user-img">
+                    </div>
+                    Cộng đồng sinh viên 2k3
+                </a>
+                </div>
+            </div>
+            <a href="https://www.instagram.com/obnoliub_29/" class="follow-me" target="_blank">
+                <span class="follow-text">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                  </svg>
+                 Follow me on Instagram
+                </span>
+                <span class="developer">
+                 <img src="./assets/images/cat.jpg" />
+                 Đức Việt
+                </span>
+            </a>
+        </div>
+
+        <div class="main">
+            <div class="search-bar">
+                <input type="text" placeholder="Search" />
+                <button class="right-side-button" @click="rightSide = !rightSide">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                </button>
+            </div>
+            <div class="group">
+                <h1 class="titbox">Hoạt động gần đây</h1>
+                <div class="group-post box">
+                    <div class="post status-main">
+                        <div class="img-container">
+                            <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/387765965_302446835863598_8078131847825222631_n.jpg?stp=c52.0.64.64a_cp0_dst-jpg_p64x64&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=i5D47Wel2y8AX_DN5Eh&_nc_oc=AQk2rVEXqB9hQ6BlTNFz9A3d75sQWtNexTPnGz9N1Y20e6fANs-BdVv2NsUQp9Lfhxs&_nc_ht=scontent.fhan14-1.fna&oh=00_AfCaZljMIj3j1zLs2gQln5GsMYeo53LrY5kDru1KTXVlBg&oe=652C2972" alt="" class="img-gr" style="width: 50px;">
+                            <img src="https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-1/387777676_342549071632565_6056664119715263423_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kW1Pm1ErqVUAX9mItYM&_nc_ht=scontent.fhan14-4.fna&oh=00_AfAdxnVY4SVaxoTK0JXgVJl-siOnM0vfpEHpAH_YjMBLAQ&oe=652CD7F7" alt="" class="img-gr" style="width: 30px;">
+                          </div>
+                        <div class="album-detail">
+                            <div class="album-title"><strong>Sinh viên trường đại học Phenikaa</strong></div>
+                            <div class="album-date">Sinh viên trường đại học Phenikaa <span> · </span><span class="quantri">Quản trị viên</span><span> · </span> 6 giờ trước</div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="intro-menu"><i class="fa fa-ellipsis-h"></i></button>
+                            <div class="dropdown-content">
+                              <a href="#"><i class="fa fa-bookmark"></i> Lưu bài viết</a>
+                              <a href="#"><i class="fa fa-bell"></i> Bật thông báo về bài viết này</a>
+                              <a href="#"><i class="fa fa-times-circle"></i> Ẩn bài viết</a>
+                            </div>
+                          </div>
+                        <div class="album-content" style="padding: 0;">
+                            <p>Concert Xanh Trắng Cam này có thua gì Hồng Đen đâu nhỉ 😀</p>
+                            <p>#svkt_phenikaa</p>
+                            <div class="post-album" style="background-color: rgba(0, 0, 0, 0.29);">
+                                <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/391739241_344256334795172_5630657156020428691_n.jpg?stp=dst-jpg_s960x960&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pPJQW9G4iNYAX8DKaXI&_nc_ht=scontent.fhan14-1.fna&oh=00_AfAdCFM00LBMiaYfjd0cQY8EyCOBlcja1xoGfHEh4g9RZw&oe=652D7C27" alt="" class="photo" style="width: 50%; margin: 0 auto;" />
+                            </div>
+                        </div>
+                        <div class="post-actions">
+                            <a href="#" class="post-action">
+                                <i class="fa fa-heart-o"></i>
+                                1K
+                            </a>
+                            <a href="#" class="post-action">
+                                <i class="fa fa-comment-o"></i>
+                                236
+                            </a>
+                            <a href="#" class="post-action">
+                                <i class="fa fa-share"></i>
+                                20
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-post box">
+                    <div class="post status-main">
+                        <div class="img-container">
+                            <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/377771690_2678940438910583_112006674704693875_n.jpg?stp=c70.0.64.64a_cp0_dst-jpg_p64x64&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=7NBAOVFYWx0AX-AoXTw&_nc_ht=scontent.fhan14-3.fna&oh=00_AfB9ygtQOXey0Dw7OJUQTfoImSteSHzDvdovCogMaqwIWQ&oe=652D5360" alt="" class="img-gr" style="width: 50px;">
+                            <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/367682933_794965789026524_863604389349225390_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=5qqiXClbvIgAX9rbkOb&_nc_oc=AQmnqqEn0kZTrShosTtFRVn9156OX8-5dsIgNMhBfiYPQixCSMQVz9m2TC4xVZVubbo&_nc_ht=scontent.fhan14-1.fna&oh=00_AfBUVW_qZ0BnKsT0crJPvuI309pBelvrpsZKCE3jbWlUog&oe=652BBBDE" alt="" class="img-gr" style="width: 30px;">
+                          </div>
+                        <div class="album-detail">
+                            <div class="album-title"><strong>Góc thông tin Phenikaa</strong></div>
+                            <div class="album-date">Anh Nguyen<span> · </span> 18 giờ trước</div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="intro-menu"><i class="fa fa-ellipsis-h"></i></button>
+                            <div class="dropdown-content">
+                              <a href="#"><i class="fa fa-bookmark"></i> Lưu bài viết</a>
+                              <a href="#"><i class="fa fa-bell"></i> Bật thông báo về bài viết này</a>
+                              <a href="#"><i class="fa fa-times-circle"></i> Ẩn bài viết</a>
+                            </div>
+                          </div>
+                        <div class="album-content" style="padding: 0;">
+                            <p>🎱#9ball DUBAI68 PHENIKA OPEN 
+                                Giải 9 ball dành cho sinh viên Đại Học Phenika 
+                                🥳🥳🥳Giải 9 bi cho các cơ thủ hạng G H I 
+                                ⏰ Thời gian thi đấu: 9h sáng Chủ nhật 15/10/2023
+                                🗺 Địa điểm thi đấu: Dubai68 Billiards club CT7A – Khu đô Thị Dương Nội – Hà Đông - Hà Nội
+                                Cơ cấu giải thưởng
+                                🥇 Giải nhất : 1.200.000 VNĐ + cờ lưu niệm + cup
+                                🥈 Giải nhì : 800.000VND + cờ lưu niệm 
+                                🥉 Giải ba : 500.000 ( Đồng giải ba )+ cờ lưu niệm
+                                ( Đây là giải thưởng của 32 cơ thủ đăng ký, giải thưởng sẽ thay đổi theo số lượng người tham gia)
+                                🎫 Thể lệ thi đấu
+                                • 9 bi xếp thấp
+                                - Phá luân phiên
+                                - Bắt 3 đui liên tiếp
+                                - Đánh 2 mạng
+                                • Đồng cơ chạm 6
+                                Chênh 1 hạng 7 chấp 1
+                                Chênh 2 hạng 8 chấp 2
+                                💵💵💵 Lệ phí tham gia #99k/ người FREE tiền bàn
+                                ><><>< Các cơ thủ chuyển khoản ghi rõ tên và hạng của mình....
+                                Ngân Hàng: Viettinbank
+                                Tên: HOANG VAN THONG
+                                STK: 103830556666
+                                Nội dung : tên cơ thủ  phenika open hạng
+                                Chuyển khoản lệ phí trước ngày 14/09/2023
+                                ❗️❗️❗️ Lưu ý cơ thủ nào đến muộn 20 phút sẽ bị xử thua
+                                ☎️☎️☎️ Hotline : 0961.30.9999</p>
+                        </div>
+                        <div class="post-actions">
+                            <a href="#" class="post-action">
+                                <i class="fa fa-heart-o"></i>
+                                123
+                            </a>
+                            <a href="#" class="post-action">
+                                <i class="fa fa-comment-o"></i>
+                                45
+                            </a>
+                            <a href="#" class="post-action">
+                                <i class="fa fa-share"></i>
+                                10
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side" :class="{ 'active': rightSide }">
+            <div class="account">
+                <button class="account-button">
+                    <a href="message.html" style="color: #64677a;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </a>
+                  </button>
+                <button class="account-button">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                    <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
+                </svg>
+                </button>
+                <span class="account-user">
+                    <a href="profie.html" style="color: #64677a; text-decoration: none;">Viet Nguyen</a>
+                    <a href="profie.html"><img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="" class="account-profile" alt=""></a>
+                <span>▼</span>
+                </span>
+            </div>
+            <div class="side-wrapper stories">
+                <div class="side-title">STORIES</div>
+                <div class="user">
+                    <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-1/298113927_766538144395248_4708415282949093513_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=1&ccb=1-7&_nc_sid=fe8171&_nc_ohc=aglHFGF9p1AAX-OfwAZ&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAdOoZVDMtFBJSUyhMKgJzy_mQNO4gcwsIhCPxNQMnKzA&oe=652BFAA9" alt="" class="user-img">
+                    <div class="username">Khúc Thị Hương
+                        <div class="album-date">12 hours ago</div>
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-1/369784456_3582703428662903_6539092503981732885_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=111&ccb=1-7&_nc_sid=fe8171&_nc_ohc=S64xzg66gRYAX9OZnG-&_nc_ht=scontent.fhan14-4.fna&oh=00_AfDAqt3Q4ewdEtWkniZfSmM99XIB9PUsbZ1H3H8TzP07qg&oe=652B54B7" alt="" class="user-img">
+                    <div class="username">Phạm Thế Huy
+                        <div class="album-date">29 minutes ago</div>
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="https://scontent.fhan14-4.fna.fbcdn.net/v/t1.6435-1/126281523_405731757267655_6371519000865743833_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=111&ccb=1-7&_nc_sid=f67be1&_nc_ohc=-1g8A16HVVMAX-Velfa&_nc_ht=scontent.fhan14-4.fna&oh=00_AfCGfnJ8HmsevXY1Ya8fac2iABzHBbo9b9fYfea4Be9g4w&oe=654DE68B" alt="" class="user-img">
+                    <div class="username">Trần Huy
+                        <div class="album-date">3 hours ago</div>
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-1/384789611_1128814881821748_3016957592848307848_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=103&ccb=1-7&_nc_sid=fe8171&_nc_ohc=rodK2wuHsLIAX9J_HTI&_nc_ht=scontent.fhan14-3.fna&oh=00_AfDNqwiHP-wwM8UiRCC3WPimz9WILXf3atK-roMIqXgdVg&oe=652C318E" alt="" class="user-img">
+                    <div class="username">Mạnh Cường
+                        <div class="album-date">18 hours ago</div>
+                    </div>
+                </div>
+               </div>
+               <div class="side-wrapper contacts">
+                    <div class="side-title">CONTACTS</div>
+                    <div class="user">
+                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" class="user-img">
+                        <div class="username">Thanh Le
+                            <div class="user-status"></div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/373374170_1574872339712050_5613084140141903632_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=107&ccb=1-7&_nc_sid=fe8171&_nc_ohc=Bl720-5AwY8AX-J7lnQ&_nc_ht=scontent.fhan14-1.fna&oh=00_AfBhj-Abo4xoY_b5lNc_jpAOCQa1Q1iIeVvMBRmkzJPIsA&oe=652B26BA" class="user-img">
+                        <div class="username">Vinh Phạm
+                            <div class="user-status offline"></div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/344712654_976258430452348_1688114836750781781_n.jpg?stp=c0.0.56.56a_cp0_dst-jpg_p56x56&_nc_cat=105&ccb=1-7&_nc_sid=fe8171&_nc_ohc=f98ghzbyv60AX-5cQMK&_nc_ht=scontent.fhan14-1.fna&oh=00_AfBpikX3l-4rRStkvOSehWX0fy383_uekYSst9t3312r5w&oe=652BD46F" class="user-img">
+                        <div class="username">Phạm Duy
+                            <div class="user-status offline"></div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" class="user-img">
+                        <div class="username">Vũ Bích Ngọc
+                            <div class="user-status"></div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/351504112_3366589240337211_4890079189011262339_n.jpg?stp=dst-jpg_p100x100&_nc_cat=105&ccb=1-7&_nc_sid=fe8171&_nc_ohc=gc8dsVOtJWwAX8b4SK5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan14-1.fna&oh=00_AfCYnI7QHQT0WfINocPMiyXComl1gVCFvM9iFe0hp5NZQw&oe=652B24C6" class="user-img">
+                        <div class="username">Mai Ngoc Dang
+                            <div class="user-status"></div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" class="user-img">
+                        <div class="username">Nguyễn Hoàng Anh
+                            <div class="user-status"></div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-1/308109425_853257305839637_7960613137103038734_n.jpg?stp=dst-jpg_p100x100&_nc_cat=106&ccb=1-7&_nc_sid=fe8171&_nc_ohc=KhKiKcY-yAgAX_HdfLw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan14-2.fna&oh=00_AfCMkiU8_F4k2ek4_B2fjPP_zsLHJpHLRDQXdgb_Vyyklg&oe=652AC59C" class="user-img">
+                        <div class="username">Vi Dang Quang
+                            <div class="user-status"></div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="https://scontent.fhan14-4.fna.fbcdn.net/v/t1.6435-1/126281523_405731757267655_6371519000865743833_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=111&ccb=1-7&_nc_sid=f67be1&_nc_ohc=-1g8A16HVVMAX-Velfa&_nc_ht=scontent.fhan14-4.fna&oh=00_AfCGfnJ8HmsevXY1Ya8fac2iABzHBbo9b9fYfea4Be9g4w&oe=654DE68B" class="user-img">
+                        <div class="username">Trần Huy
+                            <div class="user-status idle"></div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" class="user-img">
+                        <div class="username">Chí Vũ
+                            <div class="user-status"></div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/277784183_700694434610786_2699075427820865923_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=105&ccb=1-7&_nc_sid=fe8171&_nc_ohc=TLmBaun0Jz4AX_9I1IJ&_nc_oc=AQkx-SwPyLy5Dw2aG0JRxNwdy8MGmRu3L1v7iqxTzTl7xi5plwnrUlC2Fkrn-uiMnkM&_nc_ht=scontent.fhan14-1.fna&oh=00_AfC8H4BWV2DZgUCAQFdkTBQ9LMRHdFQkgJtJ_7hEWOAWEQ&oe=652BAF7B" alt="" class="user-img">
+                        <div class="username">Thanh Nguyen
+                            <div class="user-status idle"></div>
+                        </div>
+                    </div>
+                </div>
+            <div class="search-bar right-search">
+                <input type="text" placeholder="Search" />
+                <div class="search-bar-svgs">
+                    <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+                    </svg>
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469.34 469.34">
+                        <path d="M456.84 76.17l-64-64.06c-16.13-16.13-44.18-16.17-60.37.04L45.77 301.67a10.73 10.73 0 00-2.7 4.59L.41 455.73a10.68 10.68 0 0013.19 13.2l149.33-42.7c1.73-.5 3.3-1.42 4.58-2.7l289.33-286.98c8.06-8.07 12.5-18.78 12.5-30.19s-4.44-22.12-12.5-30.2zM285.99 89.74L325.25 129l-205 205-14.7-29.44a10.67 10.67 0 00-9.55-5.9H78.92L286 89.75zM26.2 443.14l13.9-48.64 34.74 34.74-48.64 13.9zm123.14-35.18L98.3 422.54l-51.5-51.5L61.38 320H89.4l18.38 36.77a10.67 10.67 0 004.77 4.77l36.78 18.39v28.03zm21.33-17.54v-17.09c0-4.04-2.28-7.72-5.9-9.54l-29.43-14.7 205-205 39.26 39.26-208.93 207.07zm271.11-268.7l-47.03 46.61L301 74.6l46.59-47c8.06-8.07 22.1-8.07 30.16 0l64 64c4.03 4.03 6.25 9.38 6.25 15.08s-2.22 11.05-6.22 15.05z" />
+                    </svg>
+                    <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M12 5v14M5 12h14" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" @click="rightSide = false; leftSide = false" :class="{ 'active': rightSide || leftSide }"></div>
+    </div>
+</body>
+</html>

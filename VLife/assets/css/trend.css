@@ -1,0 +1,353 @@
+.main{
+    overflow: auto;
+    background-color: rgb(36, 39, 59);
+}
+.trend-container{
+    padding: 20px;
+    flex-grow: 1;
+    overflow: auto;
+    background-color: #24273b;
+}
+
+.top-trending h1, .bxh h1{
+    font-size: 20px;
+}
+
+.group-sugget-loading img{
+    width: 100%;
+    height: 126px;
+}
+
+.group-sugget-loading{
+    transition: transform 1s linear;
+    position: relative;
+    width: 922px;
+    overflow: hidden;
+}
+
+.group-sugget-loading > a{
+    background-color: #151728ab;
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .group-sugget-loading {
+      width: 568px; /* Độ rộng mong muốn cho kích thước này */
+    }
+}
+
+.group-sugget-loading:before{
+    display: block;
+    position: absolute;
+    width: 10%;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    opacity: .6;
+    background: linear-gradient(270deg,#555252 0%,rgba(136,136,136,0) 100%);
+    content: '';
+    z-index: 3;
+    border-radius: 10px 0 0 10px;
+}
+.group-sugget-loading .group-sugget-list{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 1000px;
+    transition: transform 0.5s ease; /* Thêm hiệu ứng transition cho chuyển động */
+}
+.group-sugget-loading .group-sugget-list .item{
+    width: 220px;
+    margin-right: 15px;
+    min-height: 150px;
+    background-color: #151728;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.group-sugget-loading .group-sugget-list .item .image{
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    transition: ease-in-out 1.5s;
+    background: #eee;
+    background: linear-gradient(to right,#eee 8%,#ddd 18%,#eee 33%);
+    background-size: 800px 200px;
+    position: relative;
+    width: 100%;
+    height: 126px;
+}
+.group-sugget-loading .group-sugget-list .item .content{
+    padding: 12px;
+    display: block;
+    font: normal 15px/20px SFSemiBold;
+    
+}
+.group-sugget-loading .group-sugget-list .item .content>a{
+    color: #ccc8db;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.group-sugget-loading .group-sugget-list .item .title{
+    margin: 0;
+    height: 10px;
+    width: 100%;
+    /* animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    transition: ease-in-out 1.5s;
+    background: #eee;
+    background: linear-gradient(to right,#eee 8%,#ddd 18%,#eee 33%);
+    background-size: 800px 200px;
+    position: relative;
+    margin-bottom: 5px; */
+}
+.group-sugget-loading .group-sugget-list .item .des{
+    height: 10px;
+    width: 50%;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    transition: ease-in-out 1.5s;
+    /* background: #eee;
+    background: linear-gradient(to right,#eee 8%,#ddd 18%,#eee 33%); */
+    background-size: 800px 200px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.group-sugget-loading .group-sugget-list .item .user{
+    display: flex;
+    margin-top: 10px;
+}
+.group-sugget-loading .group-sugget-list .item .user .list-user{
+    display: flex;
+   align-items: center;
+}
+.group-sugget-loading .group-sugget-list .item .user .list-user span{
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    transition: ease-in-out 1.5s;
+    /* background: #eee;
+    background: linear-gradient(to right,#eee 8%,#ddd 18%,#eee 33%); */
+    background-size: 800px 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.group-sugget-loading .group-sugget-list .item .user .user-total{
+    width: calc(100% - 100px);
+}
+.group-sugget-loading .group-sugget-list .item .user .user-total p{
+    height: 3px;
+    margin-bottom: 1px;
+}
+.prev, .next {
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -30px;
+padding: 16px;
+color: white;
+font-size: 20px;
+cursor: pointer;
+}
+.prev {
+    left: 0;
+    z-index: 10;
+}
+.next {
+    z-index: 10;
+    right: 0;
+}
+
+.box-flex{
+    display: flex;
+}
+
+
+.bxh{
+    margin: 10px 0 10px 0;
+    background-color: #151728;
+    border-radius: 4px;
+    width: 500px;
+    text-align: center;
+}
+.bxh iframe{
+    margin: 0 20px;
+    width: 450px;
+    height: 482px;
+}
+
+/* weather-app */
+
+.weather-app{
+    background: #151728;
+    border-radius: 4px;
+    margin: 10px 0 10px 10px;
+}
+
+.weather-container {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to right, #5170fa, #f63266);
+    width: 400px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.search-weather {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.search-icon {
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+}
+
+#search-input {
+    border: 0;
+    outline: 0;
+    padding: 3px 3px 3px 20px;
+    background: transparent;
+    height: 20px;
+    color: white;
+}
+
+#search-input::placeholder {
+    color: rgb(206,206,206);
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding: 80px 50px;
+    box-sizing:content-box;
+}
+
+.city-name {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.weather-state {
+    font-size: 13px;
+}
+
+.weather-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.temperature {
+    font-size: 80px;
+    font-weight: lighter;
+    line-height: 1;
+    position: relative;
+}
+
+.temperature::after {
+    content: 'o';
+    position: absolute;
+    font-size: 30px;
+}
+
+.additional-section {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+.additional-section .row {
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.additional-section .item-weather {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.additional-section .item-weather .label {
+    font-weight: bold;
+}
+
+.post-trend{
+    margin: 20px 0 20px 0;
+}
+.post{
+    margin: 10px;
+    padding-top: 20px;
+}
+.post-album{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 60vh;
+}
+.post-album>.post-photo{
+    width: 50%;
+}
+.post-album-right{
+    width: 50%;
+    margin-left: 10px;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+.post-photo{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.post-album-right .post-photo{
+    height: calc(50% - 10px);
+}
+
+.btn-load-more{
+    margin: 0 auto 20px;
+}
+.btn-load-more button{
+    margin: 10px auto;
+    display: flex;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #9a9a9a;
+    color: #ccc8db;
+    background: transparent;
+    border-radius: 4px;
+}
+.btn-load-more button:hover{
+    background: linear-gradient(to right, #5170fa, #f63266);
+    font-weight: bold;
+}

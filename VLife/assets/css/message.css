@@ -1,0 +1,259 @@
+@media only screen and (max-width: 800px) {
+	.chatuser p{
+		width: 50%;
+	}
+}
+/*Design of contact section on left*/
+.contact
+{
+	background-color: #181d2f;
+	border-radius: 4px 0 0 4px;
+	/*padding: 15px;*/
+	width: 20%;
+	box-sizing: border-box;
+	float: left;
+	height: 100vh;
+	border-right: 1px solid black;
+
+}
+
+/*heading text design*/
+.headmsg
+{
+	height: 50px;
+	width: 100%;
+	background-color: rgb(21, 23, 40);
+}
+
+.headmsg span
+{
+	margin: 0px;
+	/* color: #151728; */
+	font-family: verdana;
+	font-size: 20px;
+	padding:10px 12px;
+	/* text-align: center; */
+
+}
+
+/*left content*/
+.leftcontent
+{
+	width: 90%;
+	padding-top: 4px;
+	margin: 0 10px;
+}
+
+/*design search bar*/
+#searchcontact
+{
+	padding:8px;
+	width: 95%;
+	border-radius: 8px;
+	font-size: 14px;
+	border:0px;
+	/* outline: 0px; */
+	box-sizing: border-box;
+	border: 1px solid rgba(0,0,0,0.3);
+	margin: 0 4px;
+}
+
+.contacts
+{
+	overflow: auto;
+	height:100vh;
+	width: 99%;
+
+}
+
+.contacts .contactuser
+{
+	width: 100%;
+	padding: 4px 2px 4px 2px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.contacts .contactuser img
+{
+	display: inline;
+	width: 35px;
+	height: 35px;
+	float: left;
+	border-radius: 50%;
+}
+
+.contacts .contactuser p
+{
+	display: inline;
+	position: relative;
+	top: 10px;
+	left: 15px;
+	font-size: 15px;
+	/* color: black */
+}
+
+/*Design of chat section on right*/
+.chat
+{
+	border: 1px solid rgba(245, 245, 245, 0.338);
+	border-radius: 0 4px 4px 0;
+	/*padding: 15px;*/
+	width:80%;
+	box-sizing: border-box;
+	float: right;
+	height: 100vh;
+	/* border-left: 1px solid black; */
+	position: relative;
+	background-image: url(https://flc-event.vn/wp-content/uploads/2020/02/backgound-about-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*chat user heading design*/
+.chatuser
+{
+	height: 50px;
+	/* background-color: #151728; */
+	width: 100%;
+}
+
+.fa{
+	padding-right: 10px;
+}
+
+/*text area to send msg design*/
+#textarea
+{
+	width: 95%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    resize: none;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 1px solid rgba(164, 161, 161, 0.4);
+    outline: 0px;
+    padding: 10px 45px 10px 45px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background: transparent;
+	color: aliceblue;
+}
+
+/*send symbol design*/
+#sendsymbol
+{
+	position: absolute;
+    /* bottom: 2px; */
+    bottom: 18px;
+    right: 40px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 26px;
+    color: rgb(0, 132, 255);
+    font-weight: bold;
+    /* color: #009688; */
+    cursor: pointer;
+}
+
+/*hover effect on send symbol*/
+#sendsymbol:hover
+{
+	color: rgb(0, 85, 255);
+	/*color: #48FFA8;*/
+}
+.icon{
+	width: 35px;
+	border: none;
+	background: transparent;
+	color: #f6f9fa;
+	position: absolute;
+	bottom: 18px;
+	font-size: 26px;
+	left: 30px;
+	margin: 0;
+	cursor: pointer;
+	z-index: 3;
+}
+/*chat user picture*/
+.chatuser img
+{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	border-radius: 50%;
+}
+
+/*chat msg user name*/
+.chatuser p
+{
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 18px;
+	margin-left: 12px;
+	color: #f6f9fa;
+	font-family: verdana;
+	width: 80%;
+}
+
+.chatuser{
+	border-bottom: 1px solid rgba(245, 245, 245, 0.352);
+}
+
+/*chat msg box*/
+.chatmsg
+{
+	width: 100%;
+	height: 100vh;
+	/* background-color: #79CFA2;   */
+	/* box-shadow: 0px 4px 8px #79CFA2; */
+	overflow: auto;
+}
+
+/*msg received and send box*/
+.received, .send
+{
+	display: none;
+	overflow: hidden;
+	position: relative;
+	color: #f6f9fa;
+}
+
+/*chat msg design*/
+.chatmsg p
+{
+	padding: 6px;
+	margin: 10px;
+	/*border: 1px solid #43E954;*/
+	border: none;
+	max-width: 260px;
+	/*width:100%;*/
+	font-size: 14px;
+}
+
+/*msg received design*/
+.received p
+{
+	float: left;
+	color: #f6f9fa;
+	background-color: rgb(0, 132, 255);
+	margin-left: 15px;
+	border-radius: 10px;
+}
+
+/*msg send desing*/
+.send p
+{
+	float: right;
+	background-color: rgb(0, 132, 255);
+	margin-right: 15px;
+	border-radius: 10px;
+}
+
