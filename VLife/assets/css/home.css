@@ -223,6 +223,7 @@ main{
     border-radius: var(--card-border-radius);
 }
 .main-left aside .menu-item{
+    color: var(--color-light);
     display: flex;
     align-items: center;
     height: 4rem;
