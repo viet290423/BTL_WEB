@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Vẽ biểu đồ trong HTML</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./assets/css/table.css">
+    <script type="module" src="./assets/js/API.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="r1">
+            <div class="cl1">
+                <canvas id="canvas1" style="height: 250px;"></canvas>
+            </div>
+
+            <div class="cl1">
+                <canvas id="canvas2" style="height: 200px;"></canvas>
+            </div>
+            
+            <div class="cl1">
+                <canvas id="canvas3" style="height: 250px;"></canvas>
+            </div>
+
+        </div>
+        <div class="r2">
+            <canvas id="canvas" style="height: 300px;"></canvas>
+            <p>Nhập số năm:</p>
+            <input type="int" id="yearInput">
+            <button onclick="canvasA()" >Lọc</button>
+            <!-- <button onclick="test()">test</button> -->
+        </div>
+
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/table.js"></script>
+    <script src="./assets/js/test.js"></script>
+</body>
+
+</html>
