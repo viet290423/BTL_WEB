@@ -4,6 +4,10 @@
 	}
 }
 /*Design of contact section on left*/
+.side-menu a:active{
+	color:#1488fa;
+}
+
 .contact
 {
 	background-color: #181d2f;

@@ -138,6 +138,9 @@ body {
 .side-menu a:hover {
   color: #fff;
 }
+.side-menu a:active{
+  color:#1488fa;
+}
 .side-menu a:not(:last-child) {
   margin-bottom: 20px;
 }
