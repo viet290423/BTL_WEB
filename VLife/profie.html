@@ -417,11 +417,54 @@
             <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
            </svg>
           </button>
-          <span class="account-user">
-                <a href="#" style="color: #64677a; text-decoration: none;">Viet Nguyen</a>
-                <a href="#"><img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="" class="account-profile" alt=""></a>
-           <span>▼</span>
-          </span>
+          <button style="border: none; background: transparent;" id="my_btn">
+              <span class="account-user">
+                    <a href="#" style="color: #64677a; text-decoration: none;">Viet Nguyen</a>
+                    <a href="#"><img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="" class="account-profile" alt=""></a>
+               <span>▼</span>
+              </span>
+          </button>
+          <div class="account-action">
+            <div class="my-account">
+                <button>
+                    <span class="account-user">
+                        <a href="profie.html"><img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="" class="account-profile" alt=""></a>
+                        <a href="profie.html" style="color: black; text-decoration: none;">Viet Nguyen</a>
+                  </span>
+                </button>
+            </div>
+            <div class="logout">
+                <div class="btn">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                        Setting and Privacy
+                    </a>
+                </div>
+                <div class="btn">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="17" x2="12" y2="17"></line>
+                        </svg>
+                        Help & Support
+                    </a>
+                </div>
+                <div class="btn">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                            <path d="M10 22H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h5"></path>
+                            <polyline points="17 16 21 12 17 8"></polyline>
+                            <line x1="21" y1="12" x2="9" y2="12"></line>
+                        </svg>
+                        Logout
+                    </a>
+                </div>
+            </div>
+            </div>
          </div>
          <div class="side-wrapper stories">
           <div class="side-title">STORIES</div>
@@ -532,4 +575,17 @@
         <div class="overlay" @click="rightSide = false; leftSide = false" :class="{ 'active': rightSide || leftSide }"></div>
        </div>
 </body>
+<script>
+    const myBtn = document.querySelector('#my_btn');
+    const accountAction = document.querySelector('.account-action');
+
+    myBtn.addEventListener('click', () => {
+    if (accountAction.style.display === 'block') {
+        accountAction.style.display = 'none'; // Nếu đang hiển thị, thì ẩn nó
+    } else {
+        accountAction.style.display = 'block'; // Nếu không hiển thị, thì hiển thị nó
+    }
+    });
+
+</script>
 </html>

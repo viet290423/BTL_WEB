@@ -757,3 +757,69 @@ main{
 }
 
 /* end media queryes */
+
+
+/* logout box*/
+.account-action{
+    display: none;
+    background-color: #fff;
+    width: 250px;
+    padding: 16px 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    overflow: auto;
+    z-index: 8;
+  }
+  .my-account{
+    border-radius: 10px;
+    width: 80%;
+    height: 55px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  }
+  .my-account button{
+    padding: 10px 15px;
+    border: none;
+    background: transparent;
+  }
+  button:hover{
+    opacity: 0.6;
+  }
+  .account-user {
+  display: inline-flex;
+  align-items: center;
+  color: whitesmoke;
+  font-weight: 600;
+  }
+  .account-user span {
+  font-size: 10px;
+  font-weight: normal;
+  }
+  .account-profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 10px;
+  }
+  
+  .logout{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .logout a{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    color: black;
+    text-decoration: none;
+  }
+  .logout a svg{
+    margin-right: 10px;
+  }
+  .mybtn:hover{
+    background-color: #ccc;
+  }

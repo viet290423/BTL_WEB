@@ -94,3 +94,14 @@ document.querySelectorAll('.action-button span:first-child i').forEach(liked=>{
 setTimeout(()=>{
     document.querySelector('.input-post').classList.remove('boxshadow1')
 }, 300);
+
+const myBtn = document.querySelector('#my_btn');
+    const accountAction = document.querySelector('.account-action');
+
+    myBtn.addEventListener('click', () => {
+    if (accountAction.style.display === 'block') {
+        accountAction.style.display = 'none'; // Nếu đang hiển thị, thì ẩn nó
+    } else {
+        accountAction.style.display = 'block'; // Nếu không hiển thị, thì hiển thị nó
+    }
+    });
