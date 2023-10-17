@@ -36,9 +36,6 @@ document.querySelector('#notifications').addEventListener('click', ()=>{
     document.querySelector('#ntCounter1').style.display='none';
 })
 
-document.querySelector('#messages-notifications').addEventListener('click', () => {
-    document.querySelector('#ntCounter2').style.display = 'none';
-})
 //
 let Accept = document.querySelectorAll('#Accept');
 let Dlete = document.querySelectorAll('#Delete');
@@ -72,10 +69,7 @@ document.querySelector('#profile-upload').addEventListener('change', ()=>{
         AllMyProfileImg.src = URL.createObjectURL(document.querySelector('#profile-upload').files[0])
     })
 });
-    // Start Add post Popup.
-document.querySelector('#create-lg').addEventListener('click',()=>{
-    document.querySelector('.add-post-popup').style.display='flex'
-});
+
 
 document.querySelector('#feed-pic-upload').addEventListener('change',()=>{
     document.querySelector('#postImg').src = URL.createObjectURL(document.querySelector('#feed-pic-upload').files[0]);
@@ -85,14 +79,9 @@ document.querySelector('#add-story').addEventListener('change',()=>{
     document.querySelector('.story img').src = URL.createObjectURL(document.querySelector('#add-story').files[0]);
     document.querySelector('.add-story').style.display='none'
 });
-// mini-button input
-document.querySelector('.mini-button').addEventListener('click',()=>{
-    document.querySelector('.input-post').classList.add('boxshadow1')
-})
 
-document.querySelector('.mini-button').addEventListener('dblclick',()=>{
-    document.querySelector('.add-post-popup').style.display='flex'
-})
+
+
 
 // liked button
 document.querySelectorAll('.action-button span:first-child i').forEach(liked=>{
