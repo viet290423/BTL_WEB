@@ -74,7 +74,10 @@ img{
 .text-bold{
     font-weight: 500;
 }
-.text-muted{
+.notification-body{
+    color: black;
+}
+.notification-body .text-muted{
     color: var(--color-gray);
 }
 /* NAVBAR */
