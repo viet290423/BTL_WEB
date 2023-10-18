@@ -30,13 +30,27 @@
 }
 body{
     font-family: 'Times New Roman', Times, serif;
-    color: var(--color-light);
+    color: var(--color-black);
     background:var(--color-dark);
     overflow-x: hidden;
 }
 .container{
     width: 90%;
     margin: 0 auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    height: 68px;
+    line-height: 68px;
+    letter-spacing: 4px;
+    position: sticky;
+    top: 0;
 }
 .profile-picture{
     width: 2.7rem;
@@ -280,14 +294,14 @@ main{
     text-align: center;
     padding: 1rem 0;
 }
-.notification-box{
-    
+.box{
+    margin-top: 20px;
     background: var(--color-white);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     box-shadow: 0 0 2rem hsl(var(--color-primary), 75%, 60% 25%);
     z-index: 8;
-    display: none;
+    /* display: none; */
 }
 .main-left .notification-box::before{
     content: "";

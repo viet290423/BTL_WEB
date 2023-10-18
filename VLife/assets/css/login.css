@@ -45,8 +45,9 @@ a {
 
 button {
     border-radius: 20px;
-    border: 1px solid #FF4B2B;
-    background-color: #FF4B2B;
+    border: 1px solid #1b86f9;
+    background-color: #1b86f9;
+    /* box-shadow: 0 0 20px #1b86f9; */
     color: #FFFFFF;
     font-size: 12px;
     font-weight: bold;
@@ -251,4 +252,13 @@ footer i {
 footer a {
     color: #3c97bf;
     text-decoration: none;
+}
+select#gender {
+    width: 100%;
+    height: 35px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: none;
+    background: #eee;
+    padding-left: 10px;
 }

@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const name = signUpForm.querySelector('input[name="name"]').value;
     const email = signUpForm.querySelector('input[name="email"]').value;
     const password = signUpForm.querySelector('input[name="password"]').value;
+    const gender = document.getElementById("gender").value;
+    const birthday = signUpForm.querySelector('input[name="birthday"]').value;
 
     // Lấy ngày hôm nay
     const today = new Date();
@@ -22,11 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
       Password: password,
       Day: day,
       Month: month,
-      Year: year
+      Year: year,
+      birthday: birthday,
+      gender: gender
     };
 
     // Thực hiện yêu cầu POST tới sheetdb.io
-    fetch("https://sheetdb.io/api/v1/26iu7y7qm5xq4", {
+    fetch("https://sheetdb.io/api/v1/9w8a8q92av0p5", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -73,4 +77,3 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     });
 });
-  

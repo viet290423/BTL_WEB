@@ -8,7 +8,6 @@
     <link rel="icon" href="./assets/images/logo.png">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
 </head>
 <body>
     <nav>
@@ -78,16 +77,15 @@
                 <aside>
                     <a id="soluong" class="menu-item active">
                         <span><i class="uil uil-chart"></i></span><h3>Số lượng đăng kí tài khoản</h3>
-                        
                     </a>
-                    <a class="menu-item" href=""> 
-                        <span><i class="uil uil-chart-growth"></i></span><h3>Các quốc gia</h3>
-                    </a>
-                    <a class="menu-item" href=""> 
+                    <a id="gender" class="menu-item"> 
                         <span><i class="uil uil-chart-pie"></i></span><h3>Giới tính</h3>
                     </a>
-                    <a class="menu-item" href=""> 
+                    <a id= "ageDistribute" class="menu-item"> 
                         <span><i class="uil uil-chart-growth"></i></span><h3>Độ tuổi</h3>
+                    </a>  
+                    <a id= "numberUser" class="menu-item"> 
+                        <span><i class="uil uil-chart-growth"></i></span><h3>Số lượng đăng kí tài khoản theo năm</h3>
                     </a>  
                 </aside>
                 <!--   aside end -->
@@ -95,15 +93,25 @@
         </div>
 		<div class="notification-box">
 			<div id="barChartContainer">
-				<canvas id="barChart"></canvas>
-				<div id="barChartLabel">Số lượng đăng ký tài khoản</div>
+                <div class="barChart box">
+                    <canvas id="barChart"></canvas>
+				    <div id="barChartLabel">Số lượng đăng ký tài khoản</div>
+                </div>
+                <div class="canvasYear box">
+                    <canvas id="canvas"></canvas>
+                    <p>Nhập số năm:</p>
+                    <input type="int" id="yearInput" style="border: 1px solid black; border-radius: 5px;">
+                    <button onclick="canvasA()" style="width: 100px; border: 1px solid black; border-radius: 5px;" >Lọc</button>
+                </div>
+                <div class="canvas2 box">
+                    <canvas id="canvas2"></canvas>
+                </div>
+                <div class="canvas3 box">
+                    <canvas id="canvas3"></canvas>
+                </div>
 			</div>
 		</div>
     </main>
     <script src="assets/js/admin.js"></script>
-    <script>
-        
-		
-    </script>
 </body>
 </html>
