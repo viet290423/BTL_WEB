@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // Thực hiện yêu cầu POST tới sheetdb.io
-    fetch("https://sheetdb.io/api/v1/9w8a8q92av0p5", {
+    fetch("https://sheetdb.io/api/v1/hlp3n9hzuwey4", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
-        fetch("https://sheetdb.io/api/v1/26iu7y7qm5xq4")
+        fetch("https://sheetdb.io/api/v1/hlp3n9hzuwey4")
             .then(response => response.json())
             .then(data => {
                 const user = data.find(entry => entry.Email === email && entry.Password === password);

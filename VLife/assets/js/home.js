@@ -36,6 +36,7 @@ document.querySelector('#notifications').addEventListener('click', ()=>{
     document.querySelector('#ntCounter1').style.display='none';
 })
 
+
 //
 let Accept = document.querySelectorAll('#Accept');
 let Dlete = document.querySelectorAll('#Delete');

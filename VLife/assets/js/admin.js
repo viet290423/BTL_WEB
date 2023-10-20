@@ -1,7 +1,7 @@
 // Biểu đồ số lượng đk theo ngày
 // Hàm lấy dữ liệu từ sheetdb.io
 async function fetchData() {
-    const response = await fetch("https://sheetdb.io/api/v1/9w8a8q92av0p5");
+    const response = await fetch("https://sheetdb.io/api/v1/hlp3n9hzuwey4");
     const data = await response.json();
     return data;
 }
@@ -57,7 +57,7 @@ function getRandomHexColor() {
 }
   
 const getData = async () => {
-    const url = 'https://sheetdb.io/api/v1/9w8a8q92av0p5';
+    const url = 'https://sheetdb.io/api/v1/hlp3n9hzuwey4';
     try {
         const response = await fetch(url, {
             method: "GET",
