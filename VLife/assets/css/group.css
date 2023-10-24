@@ -83,3 +83,6 @@
 .post-action:hover {
     color: #fff;
 }
+.post-action:focus{
+    color: #ff1f1f;
+}
