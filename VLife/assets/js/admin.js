@@ -159,6 +159,9 @@ const getData = async () => {
             if (user.userName === "admin"){
                 return
             }
+            if (user.gender === null || user.gender === ""){
+                return
+            }
             const gender = user.gender
             if (!countGender[gender]) {
                 countGender[gender] = 0
@@ -212,6 +215,10 @@ const getData = async () => {
         const listAge = {}
         data.forEach(user => {
             if (user.userName === "admin"){
+                return
+            }
+            if (user.birthday === null || user.birthday === "")
+            {
                 return
             }
             const currentDate = new Date();
