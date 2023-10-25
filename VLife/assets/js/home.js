@@ -28,6 +28,7 @@ document.querySelector('#notifications').addEventListener('click', ()=>{
     if(document.querySelector('.notification-box').style.display === 'block'){
         removeActive()
         document.querySelector('.notification-box').style.display='none';
+        document.querySelector('#ntCounter1').style.display='none';
     }
     else{
         document.querySelector('.notification-box').style.display='block';
