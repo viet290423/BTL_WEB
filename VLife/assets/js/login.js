@@ -62,6 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
+        if (email === "admin@gmail.com" && password === "admin") {
+          window.location.href = "admin.html";
+      } else{
+
         fetch("https://sheetdb.io/api/v1/hlp3n9hzuwey4")
             .then(response => response.json())
             .then(data => {
@@ -75,5 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => {
                 console.error("Lỗi khi kiểm tra đăng nhập:", error);
             });
+      }
+
     });
 });
