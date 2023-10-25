@@ -23,21 +23,25 @@ const removeActive = ()=>{
         item.classList.remove('active')
     })
 }
-menuItem.forEach(item=>{
-    item.addEventListener('click', ()=>{ 
-        removeActive();
-        item.classList.add('active');
-        document.querySelector('.notification-box').style.display='none'
-    })
-})
-// 
+
 document.querySelector('#notifications').addEventListener('click', ()=>{
-    document.querySelector('.notification-box').style.display='block';
-    document.querySelector('#ntCounter1').style.display='none';
+    if(document.querySelector('.notification-box').style.display === 'block'){
+        removeActive()
+        document.querySelector('.notification-box').style.display='none';
+    }
+    else{
+        document.querySelector('.notification-box').style.display='block';
+    }
 })
 
+// menuItem.forEach(item=>{
+//     item.addEventListener('click', ()=>{ 
+//         removeActive();
+//         item.classList.add('active');
+//         document.querySelector('.notification-box').style.display='none'
+//     })
+// })
 
-//
 let Accept = document.querySelectorAll('#Accept');
 let Dlete = document.querySelectorAll('#Delete');
 
