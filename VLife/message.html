@@ -11,7 +11,7 @@
     <script src="./assets/js/message.js" data-textarea="textarea"></script>
 </head>
 <body>
-    <div class="container" x-data="{ rightSide: false, leftSide: false }">
+    <div class="container">
         <div class="left-side" :class="{'active' : leftSide}">
             <div class="left-side-button" @click="leftSide = !leftSide">
                 <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -157,17 +157,17 @@
                             <div class="contacts">
                                 <!-- users -->
                                 <div class="contactuser" style="border-left: 2px solid whitesmoke ; margin-top: 18px;" onclick="select(1)">
-                                    <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/373374170_1574872339712050_5613084140141903632_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=107&ccb=1-7&_nc_sid=fe8171&_nc_ohc=Bl720-5AwY8AX-J7lnQ&_nc_ht=scontent.fhan14-1.fna&oh=00_AfBhj-Abo4xoY_b5lNc_jpAOCQa1Q1iIeVvMBRmkzJPIsA&oe=652B26BA" class="contimg">
-                                    <p class="name">Vinh Phạm</p>
+                                    <img src="./assets/images/avatar/vinh.jpg" class="contimg">
+                                    <p class="name">Anh Vu</p>
                                 </div>
         
                                 <div class="contactuser" onclick="select(2);">
-                                    <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-1/384789611_1128814881821748_3016957592848307848_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=103&ccb=1-7&_nc_sid=fe8171&_nc_ohc=rodK2wuHsLIAX9J_HTI&_nc_ht=scontent.fhan14-3.fna&oh=00_AfDNqwiHP-wwM8UiRCC3WPimz9WILXf3atK-roMIqXgdVg&oe=652C318E" class="contimg"/>
+                                    <img src="./assets/images/avatar/cuong.jpg" class="contimg"/>
                                     <p class="name">Mạnh Cường</p>
                                 </div>
         
                                 <div class="contactuser" onclick="select(3);">
-                                    <img src="https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-1/369784456_3582703428662903_6539092503981732885_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=111&ccb=1-7&_nc_sid=fe8171&_nc_ohc=S64xzg66gRYAX9OZnG-&_nc_ht=scontent.fhan14-4.fna&oh=00_AfDAqt3Q4ewdEtWkniZfSmM99XIB9PUsbZ1H3H8TzP07qg&oe=652B54B7" class="contimg"/>
+                                    <img src="./assets/images/avatar/huy.jpg" class="contimg"/>
                                     <p class="name">Huy trốc tru</p>
                                 </div>
         
@@ -177,12 +177,12 @@
                                 </div>
         
                                 <div class="contactuser" onclick="select(5);">
-                                    <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" class="contimg"/>
-                                    <p class="name">Con bố Q</p>
+                                    <img src="./assets/images/avatar/avatartrang.png" class="contimg"/>
+                                    <p class="name">Thanh Le</p>
                                 </div>
         
                                 <div class="contactuser" onclick="select(6);">
-                                    <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" class="contimg"/>
+                                    <img src="./assets/images/avatar/avatartrang.png" class="contimg"/>
                                     <p class="name">Ngọc Tình</p>
                                 </div>
         
@@ -192,12 +192,12 @@
                                 </div>
         
                                 <div class="contactuser" onclick="select(8);">
-                                    <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-1/308109425_853257305839637_7960613137103038734_n.jpg?stp=dst-jpg_p100x100&_nc_cat=106&ccb=1-7&_nc_sid=fe8171&_nc_ohc=KhKiKcY-yAgAX_HdfLw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan14-2.fna&oh=00_AfCMkiU8_F4k2ek4_B2fjPP_zsLHJpHLRDQXdgb_Vyyklg&oe=652AC59C" class="contimg"/>
+                                    <img src="./assets/images/avatar/quang.jpg" class="contimg"/>
                                     <p class="name">Quang Vi</p>
                                 </div>
         
                                 <div class="contactuser" onclick="select(9);">
-                                    <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" class="contimg"/>
+                                    <img src="./assets/images/avatar/avatartrang.png" class="contimg"/>
                                     <p class="name">Hoang Anh</p>
                                 </div>
         
@@ -221,7 +221,7 @@
                         <!-- heading chat user -->
                         <div class="chatuser">
                             <!-- heading chat user name and pic -->
-                            <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/373374170_1574872339712050_5613084140141903632_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=107&ccb=1-7&_nc_sid=fe8171&_nc_ohc=Bl720-5AwY8AX-J7lnQ&_nc_ht=scontent.fhan14-1.fna&oh=00_AfBhj-Abo4xoY_b5lNc_jpAOCQa1Q1iIeVvMBRmkzJPIsA&oe=652B26BA" class="chatimg"/>
+                            <img src="./assets/images/avatar/vinh.jpg" class="chatimg"/>
                             <p class="viewname">Anh Vu</p>
                             <i class="fa fa-phone" style="font-size: 20px;"></i>
                             <i class="fa fa-video-camera" style="font-size: 20px;"></i>

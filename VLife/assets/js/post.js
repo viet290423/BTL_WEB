@@ -15,7 +15,7 @@ function mypost() {
     // ==== DIV userimg ====
     var img = document.createElement("img");
     img.className = "status-img"; // Sử dụng class "status-img" cho ảnh
-    img.src = "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/351504112_3366589240337211_4890079189011262339_n.jpg?stp=dst-jpg_p100x100&_nc_cat=105&ccb=1-7&_nc_sid=fe8171&_nc_ohc=gc8dsVOtJWwAX8b4SK5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan14-1.fna&oh=00_AfCYnI7QHQT0WfINocPMiyXComl1gVCFvM9iFe0hp5NZQw&oe=652B24C6";
+    img.src = "https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg";
     divStatusMain.appendChild(img);
     
     // ==== DIV username ====

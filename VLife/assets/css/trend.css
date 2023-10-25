@@ -316,13 +316,7 @@ cursor: pointer;
 .post-album>.post-photo{
     width: 50%;
 }
-.post-album-right{
-    width: 50%;
-    margin-left: 10px;
-    line-height: 0;
-    display: flex;
-    flex-direction: column;
-}
+
 .post-photo{
     width: 100%;
     object-fit: cover;
@@ -330,9 +324,7 @@ cursor: pointer;
     border-radius: 4px;
     margin-top: 10px;
 }
-.post-album-right .post-photo{
-    height: calc(50% - 10px);
-}
+
 
 .btn-load-more{
     margin: 0 auto 20px;
@@ -350,4 +342,5 @@ cursor: pointer;
 .btn-load-more button:hover{
     background: linear-gradient(to right, #5170fa, #f63266);
     font-weight: bold;
+    opacity: 1;
 }

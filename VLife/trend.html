@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container" x-data="{ rightSide: false, leftSide: false }">
+    <div class="container">
         <div class="left-side" :class="{'active' : leftSide}">
             <div class="left-side-button" @click="leftSide = !leftSide">
                 <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -510,7 +510,7 @@
                 <!-- Bài đăng nổi bật -->
                 <div class="post-trend box">
                     <div class="post status-main">
-                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-1/253279998_256936506478935_6055665072561673565_n.jpg?stp=dst-jpg_p100x100&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kymNj0a9hGUAX9FryPe&_nc_ht=scontent.fhan14-2.fna&oh=00_AfCjXuf1KAjvN_OxgDxmehTe_KSi8DFgxa00HXDsvzjohw&oe=652B094A" class="status-img" />
+                        <img src="./assets/images/avatar/topcmt.jpg" class="status-img" />
                         <div class="album-detail">
                             <div class="album-title"><strong>Top comments</strong></div>
                             <div class="album-date">6 hours ago</div>
@@ -524,18 +524,15 @@
                             </div>
                         </div>
                         <div class="album-content" style="padding: 0;">
-                            <p>Nhức nhức cái đầu: Sau khi Ngọc Trinh mở bát thì TP.HCM lại xuất hiện thêm 2 thanh niên liên tục đăng các video biểu diễn pốc đầu xe, làm những động tác nguy hiểm nơi công cộng. 
-                                Được biết, 2 thanh niên này tên D.Q.C và H.A.T, cả 2 đều là fan mềm của Ngọc Trinh.
-                                Và mới đây nhất, C. còn quay clip pốc đầu trước mặt lực lượng CSGT. 
-                                Ngoài ra, T. còn mặc áo nhà tu, cạo trọc đầu, gây phản cảm và ảnh hưởng đến hình ảnh của Phật Giáo hết sức nghiêm trọng. Nói thêm, tự do tín ngưỡng khác với p-hỉ báng tôn giáo, hành vi này cần phải lên án.
+                            <p>Ròi xong thanh niên 😂
                             </p>
-                            <p>Cre: Nguyễn Sin</p>
+                            <p>Cre: Hội những người không có người yêu</p>
                             <div class="post-album">
-                                <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/387116858_727809439391637_5253188344694325612_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XyoznmjWdsUAX8GMNav&_nc_ht=scontent.fhan14-3.fna&oh=00_AfD0G5ceLfYs3qGSo1u6m0BdGMC5S0bTtvX2UzbJ30Q3Ow&oe=652C5544" alt="" class="post-photo" />
-                                <div class="post-album-right">
-                                    <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/387155933_727809496058298_2165441349710130565_n.jpg?stp=dst-jpg_s960x960&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8GMmmcSJVdIAX8vmoK9&_nc_ht=scontent.fhan14-3.fna&oh=00_AfDA-JmQKMyNbHmhWn_v-BdZSg4geWn8rc3Dp77ON0HEeA&oe=652B51AC" alt="" class="post-photo" />
-                                    <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/391679398_727809456058302_7888644318632940974_n.jpg?stp=dst-jpg_s960x960&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=EiBq8jYRq7gAX_V05OE&_nc_ht=scontent.fhan14-2.fna&oh=00_AfATTfNLCuRJmyEDm4UkKDjDwyCdSBt8LFACxkLwlFGTZA&oe=652BC912" alt="" class="post-photo" />
-                                </div>
+                                <!-- <img src="./assets/images/trendtopcmt1.jpg" alt="" class="post-photo"/> -->
+                                <img src="./assets/images/trendtopcmt2.jpg" alt="" class="post-photo"/>
+                                <img src="./assets/images/trendtopcmt3.jpg" alt="" class="post-photo" />
+                                <!-- <div class="post-album-right">
+                                </div> -->
                             </div>
                         </div>
                         <div class="post-actions">
@@ -784,7 +781,7 @@
                     </div>
                 </div>
                 <div class="user">
-                    <img src="https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-1/369784456_3582703428662903_6539092503981732885_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=111&ccb=1-7&_nc_sid=fe8171&_nc_ohc=S64xzg66gRYAX9OZnG-&_nc_ht=scontent.fhan14-4.fna&oh=00_AfDAqt3Q4ewdEtWkniZfSmM99XIB9PUsbZ1H3H8TzP07qg&oe=652B54B7" alt="" class="user-img">
+                    <img src="./assets/images/avatar/huy.jpg" alt="" class="user-img">
                     <div class="username">Phạm Thế Huy
                         <div class="album-date">29 minutes ago</div>
                     </div>
@@ -796,52 +793,52 @@
                     </div>
                 </div>
                 <div class="user">
-                    <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-1/384789611_1128814881821748_3016957592848307848_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=103&ccb=1-7&_nc_sid=fe8171&_nc_ohc=rodK2wuHsLIAX9J_HTI&_nc_ht=scontent.fhan14-3.fna&oh=00_AfDNqwiHP-wwM8UiRCC3WPimz9WILXf3atK-roMIqXgdVg&oe=652C318E" alt="" class="user-img">
+                    <img src="./assets/images/avatar/cuong.jpg" alt="" class="user-img">
                     <div class="username">Mạnh Cường
                         <div class="album-date">18 hours ago</div>
                     </div>
                 </div>
-               </div>
+            </div>
                <div class="side-wrapper contacts">
                     <div class="side-title">CONTACTS</div>
                     <div class="user">
-                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" class="user-img">
+                        <img src="./assets/images/avatar/avatartrang.png" class="user-img">
                         <div class="username">Thanh Le
                             <div class="user-status"></div>
                         </div>
                     </div>
                     <div class="user">
-                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/373374170_1574872339712050_5613084140141903632_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=107&ccb=1-7&_nc_sid=fe8171&_nc_ohc=Bl720-5AwY8AX-J7lnQ&_nc_ht=scontent.fhan14-1.fna&oh=00_AfBhj-Abo4xoY_b5lNc_jpAOCQa1Q1iIeVvMBRmkzJPIsA&oe=652B26BA" class="user-img">
+                        <img src="./assets/images/avatar/vinh.jpg" class="user-img">
                         <div class="username">Vinh Phạm
                             <div class="user-status offline"></div>
                         </div>
                     </div>
                     <div class="user">
-                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/344712654_976258430452348_1688114836750781781_n.jpg?stp=c0.0.56.56a_cp0_dst-jpg_p56x56&_nc_cat=105&ccb=1-7&_nc_sid=fe8171&_nc_ohc=f98ghzbyv60AX-5cQMK&_nc_ht=scontent.fhan14-1.fna&oh=00_AfBpikX3l-4rRStkvOSehWX0fy383_uekYSst9t3312r5w&oe=652BD46F" class="user-img">
+                        <img src="./assets/images/avatar/avatartrang.png" class="user-img">
                         <div class="username">Phạm Duy
                             <div class="user-status offline"></div>
                         </div>
                     </div>
                     <div class="user">
-                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" class="user-img">
+                        <img src="./assets/images/avatar/avatartrang.png" class="user-img">
                         <div class="username">Vũ Bích Ngọc
                             <div class="user-status"></div>
                         </div>
                     </div>
                     <div class="user">
-                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/351504112_3366589240337211_4890079189011262339_n.jpg?stp=dst-jpg_p100x100&_nc_cat=105&ccb=1-7&_nc_sid=fe8171&_nc_ohc=gc8dsVOtJWwAX8b4SK5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan14-1.fna&oh=00_AfCYnI7QHQT0WfINocPMiyXComl1gVCFvM9iFe0hp5NZQw&oe=652B24C6" class="user-img">
+                        <img src="./assets/images/avatar/mai.jpg" class="user-img">
                         <div class="username">Mai Ngoc Dang
                             <div class="user-status"></div>
                         </div>
                     </div>
                     <div class="user">
-                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" class="user-img">
+                        <img src="./assets/images/avatar/avatartrang.png" class="user-img">
                         <div class="username">Nguyễn Hoàng Anh
                             <div class="user-status"></div>
                         </div>
                     </div>
                     <div class="user">
-                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-1/308109425_853257305839637_7960613137103038734_n.jpg?stp=dst-jpg_p100x100&_nc_cat=106&ccb=1-7&_nc_sid=fe8171&_nc_ohc=KhKiKcY-yAgAX_HdfLw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan14-2.fna&oh=00_AfCMkiU8_F4k2ek4_B2fjPP_zsLHJpHLRDQXdgb_Vyyklg&oe=652AC59C" class="user-img">
+                        <img src="./assets/images/avatar/quang.jpg" class="user-img">
                         <div class="username">Vi Dang Quang
                             <div class="user-status"></div>
                         </div>
@@ -853,14 +850,14 @@
                         </div>
                     </div>
                     <div class="user">
-                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=nZB7DICVaTAAX8nar4-&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAg3BUu_VJOi4yunNbJeLgHJAKAtUuv1I6Al-Js14_Pqg&oe=654DD3F8" class="user-img">
+                        <img src="./assets/images/avatar/avatartrang.png" class="user-img">
                         <div class="username">Chí Vũ
                             <div class="user-status"></div>
                         </div>
                     </div>
                     <div class="user">
-                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/277784183_700694434610786_2699075427820865923_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=105&ccb=1-7&_nc_sid=fe8171&_nc_ohc=TLmBaun0Jz4AX_9I1IJ&_nc_oc=AQkx-SwPyLy5Dw2aG0JRxNwdy8MGmRu3L1v7iqxTzTl7xi5plwnrUlC2Fkrn-uiMnkM&_nc_ht=scontent.fhan14-1.fna&oh=00_AfC8H4BWV2DZgUCAQFdkTBQ9LMRHdFQkgJtJ_7hEWOAWEQ&oe=652BAF7B" alt="" class="user-img">
-                        <div class="username">Thanh Nguyen
+                        <img src="./assets/images/avatar/linh.jpg" alt="" class="user-img">
+                        <div class="username">Tường Linh
                             <div class="user-status idle"></div>
                         </div>
                     </div>
